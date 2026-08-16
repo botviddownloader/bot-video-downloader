@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Bot Video Downloader</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    max-width: 44rem; margin: 0 auto; padding: 2.5rem 1.25rem 5rem;
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  }
+  h1 { font-size: 1.7rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2.25rem; }
+  .date { opacity: .65; margin-top: 0; }
+  .lede { font-size: 1.05rem; padding: 1rem 1.15rem; border-left: 3px solid currentColor; opacity: .95; }
+  table { border-collapse: collapse; width: 100%; margin-top: .75rem; }
+  th, td { text-align: left; vertical-align: top; padding: .5rem .6rem; border-bottom: 1px solid rgba(128,128,128,.35); }
+  th { white-space: nowrap; }
+  code { font-size: .92em; }
+  footer { margin-top: 3rem; font-size: .92rem; opacity: .75; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="date">Bot Video Downloader — browser extension. Last updated: 16 August 2026.</p>
+
+<p class="lede">
+  <strong>Bot Video Downloader does not collect, transmit, store on any server,
+  or sell any user data.</strong> It has no server. There is no analytics, no
+  crash reporting, no usage counting, and no update or licence check. Nothing
+  the extension observes about you or your browsing ever leaves your computer.
+</p>
+
+<h2>Who is behind it</h2>
+<p>
+  The extension is made and maintained by one person, not a company. Questions
+  about this policy or about the extension:
+  <a href="mailto:botviddownloader@gmail.com">botviddownloader@gmail.com</a>.
+</p>
+
+<h2>What the extension does</h2>
+<p>
+  It watches the network requests the pages you visit make, in order to notice
+  when a page is playing a video. When you press the download button, it fetches
+  that video — from the same website you are already on — and saves it to your
+  computer as an ordinary file.
+</p>
+
+<h2>What is stored, and where</h2>
+<p>
+  Everything below is kept on your own computer, in the browser's local
+  extension storage. None of it is sent anywhere, and all of it is deleted when
+  you remove the extension.
+</p>
+<table>
+  <tr><th>Your settings</th>
+      <td>Preferred quality, interface language, list filters and similar
+          choices you make on the Settings screen.</td></tr>
+  <tr><th>Download history</th>
+      <td>A list of what you have downloaded — name, size, address and a
+          thumbnail — so the extension can show you what it saved. You can
+          clear it at any time from the downloads screen. How many entries are
+          kept is your setting.</td></tr>
+  <tr><th>What was found on a tab</th>
+      <td>The addresses of media a page requested, held only while that tab is
+          open. They are discarded when the tab is closed or the browser is
+          restarted.</td></tr>
+</table>
+
+<h2>What leaves your computer</h2>
+<p>
+  Only requests to the website whose video you are downloading, and only for
+  the video itself: the playlist, the video and audio pieces, subtitles, and
+  the thumbnail. These are the same requests your browser would make while
+  playing that video, and they go to that website and nowhere else. They are
+  sent with your browser's cookies for that site, exactly as playback is, so
+  that a video you are entitled to watch can be fetched at all.
+</p>
+<p>
+  The extension makes no request of its own to any other address, at any time,
+  for any reason.
+</p>
+
+<h2>Reporting a problem</h2>
+<p>
+  If you press "Report a problem", the extension copies a diagnostic text to
+  your clipboard and opens a Google Form in a new tab. It does not send
+  anything: you can read the text, edit or delete any part of it, and it
+  reaches us only if you choose to paste it and press submit yourself. What you
+  submit there is handled by Google Forms under
+  <a href="https://policies.google.com/privacy" rel="noopener">Google's privacy
+  policy</a>, and is used only to understand the fault you are reporting.
+</p>
+<p>
+  The Settings screen also links to a Telegram group. Following that link opens
+  Telegram, which is a separate service with its own privacy policy. The
+  extension shares nothing with it.
+</p>
+
+<h2>Permissions, and why each is needed</h2>
+<table>
+  <tr><th><code>webRequest</code></th>
+      <td>To notice that a page has requested a video. This is how the
+          extension finds anything at all. Requests are read, never
+          recorded off-device.</td></tr>
+  <tr><th><code>declarativeNetRequestWithHostAccess</code></th>
+      <td>To attach the correct <code>Referer</code> to a download, because
+          many sites refuse to serve their own video without it.</td></tr>
+  <tr><th><code>downloads</code></th>
+      <td>To save the finished file where your browser saves downloads.</td></tr>
+  <tr><th><code>storage</code>, <code>unlimitedStorage</code></th>
+      <td>To keep your settings and your download history on your computer, and
+          to hold the pieces of a large video while it is being assembled — a
+          film does not fit in the ordinary quota.</td></tr>
+  <tr><th><code>tabs</code></th>
+      <td>To know which tab you are looking at, so the list shows what is on
+          that page and not on another.</td></tr>
+  <tr><th><code>offscreen</code></th>
+      <td>To do the downloading and assembling in a hidden page, so the work
+          survives the popup being closed.</td></tr>
+  <tr><th><code>notifications</code> (optional)</th>
+      <td>Only if you turn it on: to tell you a long download has finished.</td></tr>
+  <tr><th>Access to all websites</th>
+      <td>Video can be on any website, and the extension cannot know in advance
+          which one you will be on. It reads a page only to find the video it is
+          playing and what that video is called. It does not read page content
+          for any other purpose, and does not touch pages you are not on.</td></tr>
+</table>
+
+<h2>What the extension will not do</h2>
+<ul>
+  <li>It does not work on YouTube. This is refused in the code, deliberately.</li>
+  <li>It does not remove or bypass DRM. Videos protected by Widevine, FairPlay
+      or similar are refused with a plain explanation.</li>
+  <li>It contains no advertising, no tracking pixels, and no third-party
+      analytics of any kind.</li>
+  <li>It executes no remotely hosted code. Everything it runs is inside the
+      package you installed.</li>
+  <li>It does not sell, rent or share data with anyone, because it holds none
+      to share.</li>
+</ul>
+
+<h2>Children</h2>
+<p>
+  The extension is not directed at children and collects no personal
+  information from anyone, of any age.
+</p>
+
+<h2>Changes to this policy</h2>
+<p>
+  If the extension ever changes in a way that affects this policy, this page is
+  updated and the date at the top changes with it. The commitment that nothing
+  is transmitted is a design decision, not a temporary state; were it ever to
+  change, it would be stated here plainly and before the fact.
+</p>
+
+<footer>
+  Bot Video Downloader · <a href="mailto:botviddownloader@gmail.com">botviddownloader@gmail.com</a>
+</footer>
+
+</body>
+</html>
